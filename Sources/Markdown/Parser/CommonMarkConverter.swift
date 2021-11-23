@@ -8,8 +8,10 @@
  See https://swift.org/CONTRIBUTORS.txt for Swift project authors
 */
 
+#if !SWIFT_MARKDOWN_COCOA_PODS
 import cmark_gfm
 import cmark_gfm_extensions
+#endif
 import Foundation
 
 /// String-based CommonMark node type identifiers.

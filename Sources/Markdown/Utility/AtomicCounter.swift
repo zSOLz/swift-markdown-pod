@@ -8,7 +8,9 @@
  See https://swift.org/CONTRIBUTORS.txt for Swift project authors
 */
 
+#if !SWIFT_MARKDOWN_COCOA_PODS
 import CAtomic
+#endif
 
 /// A wrapper for a 64-bit unsigned atomic singleton counter.
 struct AtomicCounter {
