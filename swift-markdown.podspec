@@ -1,11 +1,14 @@
 Pod::Spec.new do |s|
     s.name = "swift-markdown"
-    s.version = "pod-0.0.1"
+    s.version = "0.0.1"
     s.summary = "Swift Markdown is a Swift package for parsing, building, editing, and analyzing Markdown documents."
     s.homepage = "https://github.com/apple/swift-markdown"
     s.license = { :type => "Apache", :file => "LICENSE.txt" }
     s.author = { "Apple" => "apple@apple.com" }
-    s.source = { :git => "https://github.com/vencewill/swift-markdown.git", :tag => s.version.to_s }
+    s.source = { 
+        :git => "https://github.com/vencewill/swift-markdown.git", 
+        :tag => s.version.to_s.match(/pod-(?<tag>([0-9]*(\.[0-9]*)*?(-[^\s]*)?))$/)[:tag]
+    }
 
     s.swift_version = '5.0'
     s.requires_arc = true
