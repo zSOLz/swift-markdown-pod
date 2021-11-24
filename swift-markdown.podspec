@@ -27,13 +27,15 @@ Pod::Spec.new do |s|
     ]
     s.preserve_paths = [
         "README.md",
-        "swift-cmark/src/include/module.modulemap",
         "swift-cmark/src/*.inc",
         "swift-cmark/COPYING",
         "swift-cmark/README.md",
     ]
     s.pod_target_xcconfig = {
-        'SWIFT_INCLUDE_PATHS' => '$(SRCROOT)/swift-cmark/src/**',
+        'SWIFT_INCLUDE_PATHS' => [
+            '$(SRCROOT)/swift-cmark/src/include',
+            '$(SRCROOT)/swift-cmark/extensions/include',
+        ],
         'SWIFT_ACTIVE_COMPILATION_CONDITIONS' => 'SWIFT_MARKDOWN_COCOA_PODS'
     }
 end
