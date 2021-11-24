@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
     s.author = { "Apple" => "apple@apple.com" }
     s.source = { 
         :git => "https://github.com/vencewill/swift-markdown.git", 
-        :tag => s.version.to_s.match(/pod-(?<tag>([0-9]*(\.[0-9]*)*?(-[^\s]*)?))$/)[:tag]
+        :tag => s.version.to_s.scan(/pod-([0-9]*(\.[0-9]*)*?(-[^\s]*)?)$/)[1]
     }
 
     s.swift_version = '5.0'
