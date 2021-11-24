@@ -2,9 +2,12 @@ Pod::Spec.new do |s|
     s.name = "swift-markdown"
     s.version = "0.0.1"
     s.summary = "Swift Markdown is a Swift package for parsing, building, editing, and analyzing Markdown documents."
-    s.homepage = "https://github.com/apple/swift-markdown"
+    s.homepage = "https://github.com/vencewill/swift-markdown"
     s.license = { :type => "Apache", :file => "LICENSE.txt" }
-    s.author = { "Apple" => "apple@apple.com" }
+    s.author = { 
+        "Apple" => "apple@apple.com",
+        "Vance Will" => "23724267+vencewill@users.noreply.github.com"
+    }
     s.source = { 
         :git => "https://github.com/vencewill/swift-markdown.git", 
         :tag => "pod-" + s.version.to_s,
