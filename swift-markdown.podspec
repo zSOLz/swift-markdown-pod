@@ -7,7 +7,8 @@ Pod::Spec.new do |s|
     s.author = { "Apple" => "apple@apple.com" }
     s.source = { 
         :git => "https://github.com/vencewill/swift-markdown.git", 
-        :tag => s.version.to_s.scan(/pod-([0-9]*(\.[0-9]*)*?(-[^\s]*)?)$/)[1]
+        :tag => "pod-" + s.version.to_s,
+        :submodules => true
     }
     s.ios.deployment_target = "9.0"
     s.tvos.deployment_target = "9.0"
