@@ -36,9 +36,4 @@ Pod::Spec.new do |s|
         'SWIFT_INCLUDE_PATHS' => '$(SRCROOT)/swift-cmark/src/**',
         'SWIFT_ACTIVE_COMPILATION_CONDITIONS' => 'SWIFT_MARKDOWN_COCOA_PODS'
     }
-    s.public_header_files = [
-        "Sources/CAtomic/include/*.h",
-        "swift-cmark/src/include/*.h",
-        "swift-cmark/extensions/include/*.h",
-    ]
 end
