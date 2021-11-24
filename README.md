@@ -20,6 +20,14 @@ Add the dependency to any targets you've declared in your manifest:
 .target(name: "MyTarget", dependencies: ["Markdown"]),
 ```
 
+### Cocoa Pods
+
+In your `Podfile`, add the following dependency:
+
+```ruby
+    pod 'swift-markdown', :git => 'https://github.com/vencewill/swift-markdown.git', :submodules => true
+```
+
 ## Parsing
 
 To parse a document, use `Document(parsing:)`, supplying a `String` or `URL`:
