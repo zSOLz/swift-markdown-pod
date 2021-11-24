@@ -9,7 +9,9 @@ Pod::Spec.new do |s|
         :git => "https://github.com/vencewill/swift-markdown.git", 
         :tag => s.version.to_s.scan(/pod-([0-9]*(\.[0-9]*)*?(-[^\s]*)?)$/)[1]
     }
-
+    s.ios.deployment_target = "9.0"
+    s.tvos.deployment_target = "9.0"
+    s.osx.deployment_target = "10.9"
     s.swift_version = '5.0'
     s.requires_arc = true
     s.module_name = "Markdown"
