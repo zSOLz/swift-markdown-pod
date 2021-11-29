@@ -32,10 +32,6 @@ Pod::Spec.new do |s|
         "swift-cmark/README.md",
     ]
     s.pod_target_xcconfig = {
-        'SWIFT_INCLUDE_PATHS' => [
-            '$(SRCROOT)/swift-cmark/src/include',
-            '$(SRCROOT)/swift-cmark/extensions/include',
-        ],
         'SWIFT_ACTIVE_COMPILATION_CONDITIONS' => 'SWIFT_MARKDOWN_COCOA_PODS'
     }
 end
